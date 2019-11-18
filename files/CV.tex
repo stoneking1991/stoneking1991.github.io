@@ -1,0 +1,233 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,12pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{{\huge Shi Jin}} & \href{http://students.washington.edu/js1421/}{My homepage}\\
+{\footnotesize Big fan of understanding the nature with theory and computation} &   \href{mailto:kingstone1991@gmail.com}{Email: kingstone1991@gmail.com} \\
+  & \Mobilefone{ Cell phone: $\mathnormal{+1}$ $\mathnormal{2066050419}$}
+	\end{tabular*}
+	\vspace{1cm}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Employment}	
+
+\vspace{0.2cm}
+
+\ressubheading{\href{https://aws.amazon.com/}{Amazon Web Services (AWS) }}{\hspace{8.8cm} Seattle, WA, USA}
+{Software Development Engineer}{July 2019 -- Present}
+
+\vspace{0.4cm}
+
+Worked in AWS EC2 high-performance computing (HPC) team, developed the performance testing framework for HPC benchmarks on AWS parallel cluster.
+
+\vspace{0.4cm}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}	
+
+\vspace{0.2cm}
+
+\ressubheading{\href{http://www.uw.edu}{University of Washington (UW) }}{\hspace{7.7cm} Seattle, WA, USA}{\href{https://sharepoint.washington.edu/phys/Pages/default.aspx}{PhD in Physics}}{\hspace{7.5cm} June 2019 }
+			\begin{itemize}
+			\itemsep0em
+	\item
+	Thesis: \textit{Fission dynamics in a microscopic theory}.
+	\item
+	 Advisor: Aurel Bulgac, Professor.		 	  
+	%\item Research Assistant, 2014 - present; Teaching Assistant, 2013 - 2014.
+        \end{itemize}
+				
+\ressubheading{\href{http://en.ustc.edu.cn}{University of Science and Technology of China (USTC) }}{\hspace{2.5cm} Hefei, Anhui, China}{\href{http://physics.ustc.edu.cn}{Bachelor of Science, with distinction }}{\hspace{2.5cm} June 2013}
+\begin{itemize}
+\item
+Outstanding Graduates Award (top 5\% academic performance)
+\end{itemize}
+				
+				
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Knowledge \& Skills}
+\begin{itemize}
+\itemsep0em
+	\item
+	5+ Years of experience in high-performance scientific code development with C and CUDA (GPU) programming using parallel programming libraries (MPI).
+	\item 
+	5+ Years of experience in working on leadership supercomputers: OLCF Titan, Summit, NERSC Edison, NERSC Cori, Piz-Daint (Switzerland), TSUBAME 3.0 (Japan).
+	\item
+	5+ Years of algorithm designs for solving large-scale linear equations, partial differential equations (PDEs), and numerical optimizations.
+	\item
+	Independent research in various real-time simulations of nuclear dynamics with density functional theory (DFT), published in top peer-reviewed journals Physical Review Letters, Physical Review C, etc. (see publications).
+	\item
+	Hands-on experience with various performance profiling tools: CrayPAT, NVIDIA Visual Profiler, etc.
+	\item
+	Mastery of programming languages: C, C$++$, assembly language, Python, Matlab, Fortran, Bash.
+%	\item
+%	Practical experience of Linux and other Unix-like systems.	
+	
+	\item	
+	Miscellaneous knowledge: computer systems, scientific visualizations, machine learning.
+	
+	%\item
+	%Algorithms design and modeling, computer systems.
+	
+	
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%
+\resheading{Language}
+\begin{itemize}
+\item
+Chinese 
+\item
+English 
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\resheading{Conferences}
+%\begin{itemize}
+%\itemsep0em
+%\item
+%OLCF GPU Hackathon, Boulder, CO, June 2018
+%\begin{itemize}
+%\item
+%{
+%\fontsize{11}{12}\selectfont
+%Working in a team with experts from NVDIA and DOE laboratories, I made a sufficient improvement on the performance of our 
+%MPI+GPU code in the real time simulations by doing detailed performance profilings.
+%}
+%\end{itemize}
+%\item
+%American Physical Society (APS) April Meeting, Columbus, OH, April 2018
+%\item
+%Stewardship Science Academic Programs (SSAP) Symposium, Rockville, MD, Feb. 2018 
+%\item
+%LANL FIESTA fission school and workshop, Santa Fe, NM, Sep. 2017
+%\end{itemize}
+
+%\pagebreak
+
+\resheading{Publications}
+
+\begin{itemize}
+\itemsep0em
+
+\item Journal paper
+\begin{itemize}
+\item 
+A. Bulgac and S. Jin, \textit{Dynamics of Fragmented Condensates and macroscopic entanglement},  \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.052501}{Phys. Rev. Lett. 119, 052501 (2017)}
+
+\item
+A. Bulgac, S. Jin, K. Roche, N. Schunck, and  I. Stetcu, \textit{Fission dynamics of $^{240}$Pu from saddle to scission and beyond }, \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.100.034615}{Phys. Rev. C. 100.034615 (2019)}
+
+\item
+A. Bulgac, S. Jin, and I. Stetcu, \textit{Unitary evolution with fluctuations and dissipation},  \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.100.014615}{Phys. Rev. C. 100.014615 (2019)}
+
+\item
+A. Bulgac, M. M. Forbes, S. Jin, R. Navarro Perez and N. Schunck, \textit{Minimal Nuclear Energy Density Functional}, \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.044313}{ Phys. Rev. C. 97, 04413 (2018)}
+
+\item
+S. Jin, A. Bulgac, K. Roche and G.Wlaz\l{}owski, \textit{Coordinate-Space Solver for Superfluid Many-Fermion Systems with Shifted Conjugate Orthogonal Conjugate Gradient Method}, \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.95.044302}{Phys. Rev. C 95, 044302 (2017)}
+\end{itemize}
+
+\item Conference paper
+\begin{itemize}
+\item
+I. Stetcu, A. Bulgac, S. Jin, K. J. Roche, N. Schunck, \textit{Real time description of fission}, \href{https://arxiv.org/abs/1810.04024}{Proceedings of the "15th Varenna Conference on Nuclear Reaction Mechanisms," Varenna, Italy, June 2018}
+
+\item
+J. Grineviciute, P. Magierski, A. Bulgac, S. Jin and I. Stetcu, \textit{Accuracy of fission dynamics within the time dependent superfluid local density approximation}, \href{https://arxiv.org/abs/1711.02169}{Proceedings of XXXV Mazurian Lakes Conference on Physics, Piaski, Poland, September 3-9, 2017}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, N. Schunck, and I. Stetcu, \textit{Nuclear Fission: from more phenomenology and adjusted parameters to more fundamental theory and increased predictive power }, \href{https://www.epj-conferences.org/articles/epjconf/abs/2017/32/epjconf_fusion2017_00007/epjconf_fusion2017_00007.html}{ The FUSION17 conference, Hobart, Australia, Feb. 20-24, 2017}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, and I. Stetcu, \textit{Microscopic theory of nuclear fission}, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=281/225}{PoS(INPC2016)225, the 26th International Nuclear Physics Conference, Adelaide, Australia, Sep. 11-16, 2016}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, and I. Stetcu, \textit{Induced fission of $^{240}$Pu}, \href{https://arxiv.org/abs/1702.08490}{the 6th International Conference on Fission and Properties of Neutron-Rich Nuclei, Sanibel Island, FL, Nov. 6-12, 2016}
+
+
+
+%\item
+%Shi Jin, \textit{Shifted COCG method in nuclear physics}, the 16th Annual Meeting of the Northwest Section of the APS, Washington State University, Pullman, WA, May 14-16, 2015 
+\end{itemize}
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+     
+\end{document}
+
+
+

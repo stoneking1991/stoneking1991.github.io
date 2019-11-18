@@ -1,0 +1,167 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,12pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{{\huge Shi Jin}} & \href{mailto:js1421@uw.edu}{js1421@uw.edu}\\
+&   \href{mailto:kingstone1991@gmail.com}{kingstone1991@gmail.com} \\
+  & \Mobilefone{ $\mathnormal{+1}$ $\mathnormal{2066050419}$}\\
+  { \footnotesize Address:  3910 15th Ave. NE. } & \\
+  { \footnotesize Department of Physics, University of Washington }& \\
+  { \footnotesize Seattle, WA, 98195} &
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}	
+\ressubheading{\href{http://www.uw.edu}{University of Washington (UW) }}{\hspace{7.7cm} Seattle, WA, USA}{\href{https://sharepoint.washington.edu/phys/Pages/default.aspx}{PhD in Physics}}{\hspace{7.5cm} 2018 (expected) }
+			\begin{itemize}
+			\itemsep0em
+	\item
+	\textit{Weiss Award},  Department of Physics, UW (2015)		 	  
+	\item Research Assistant, 2014 - present; Teaching Assistant, 2013 - 2014.
+        \end{itemize}
+
+				
+\ressubheading{\href{http://en.ustc.edu.cn}{University of Science and Technology of China (USTC) }}{\hspace{2.5cm} Hefei, Anhui, China}{\href{http://physics.ustc.edu.cn}{Bachelor of Science}}{\hspace{2.5cm} Jun. 2013}
+				\begin{itemize}
+				\item
+				\textit{Excellent Graduates Award}, USTC (2013)
+                        \item  
+     \textit{Outstanding Students Award}, USTC (2010, 2011, 2012, 2013)
+     \item
+     Visiting student in {\href{http://www2.physics.ox.ac.uk/}{ Department of Physics, University of Oxford}} (Jul. -- Oct. 2012)
+				\end{itemize}						
+								
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+\resheading{Publications}
+\fontsize{10}{12}\selectfont
+
+\begin{itemize}
+\itemsep0em
+\item
+A. Bulgac and S. Jin, \textit{Dynamics of Fragmented Condensates and macroscopic entanglement},  \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.119.052501}{Phys. Rev. Lett. 119, 052501 (2017)}
+
+
+\item
+S. Jin, A. Bulgac, K. Roche and G.Wlaz\l{}owski, \textit{Coordinate-Space Solver for Superfluid Many-Fermion Systems with Shifted Conjugate Orthogonal Conjugate Gradient Method}, \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.95.044302}{Phys. Rev. C 95, 044302 (2017)}
+
+\item
+J. Grineviciute, P. Magierski, A. Bulgac, S. Jin and I. Stetcu, \textit{Accuracy of fission dynamics within the time dependent superfluid local density approximation}, \href{https://arxiv.org/abs/1711.02169}{Proceedings of XXXV Mazurian Lakes Conference on Physics, Piaski, Poland, September 3-9, 2017}
+
+\item
+A. Bulgac, M. M. Forbes, S. Jin, R. Navarro Perez and N. Schunck, \textit{A Minimal Nuclear Energy Density Functional}, \href{https://arxiv.org/abs/1708.08771}{arXiv: 1708.08771}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, N. Schunck, and I. Stetcu, \textit{Nuclear Fission: from more phenomenology and adjusted parameters to more fundamental theory and increased predictive power }, \href{https://www.epj-conferences.org/articles/epjconf/abs/2017/32/epjconf_fusion2017_00007/epjconf_fusion2017_00007.html}{ The FUSION17 conference, Hobart, Australia, Feb. 20-24, 2017}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, and I. Stetcu, \textit{Microscopic theory of nuclear fission}, \href{https://pos.sissa.it/cgi-bin/reader/contribution.cgi?id=281/225}{PoS(INPC2016)225, the 26th International Nuclear Physics Conference, Adelaide, Australia, Sep. 11-16, 2016}
+
+\item
+A. Bulgac, S. Jin, P. Magierski, K.J. Roche, and I. Stetcu, \textit{Induced fission of $^{240}$Pu}, \href{https://arxiv.org/abs/1702.08490}{the 6th International Conference on Fission and Properties of Neutron-Rich Nuclei, Sanibel Island, FL, Nov. 6-12, 2016}
+
+
+\item
+A. Bulgac, M.M. Forbes, and S. Jin, \textit{Nuclear density functionals: what do we really know?} \href{http://arxiv.org/abs/1506.09195}{ arXiv:1506.09195}
+
+\end{itemize}
+
+\resheading{Talks and Posters} 
+\fontsize{10}{12}\selectfont
+
+\begin{itemize}
+\itemsep0em
+\item
+LANL FIESTA Fission School \& Workshop, Sep. 17-22, 2017,   Santa Fe, NM, USA
+
+Poster: \textit{Induced fission of $^{240}$Pu within time-dependent density functional theory.}
+
+\item
+APS Northwestern Section Meeting, May 14-16, 2015,   Pullman, WA, USA
+
+Talk: \textit{Shifted Conjugate-Orthogonal Conjugate-Gradient (COCG) method in Nuclear Physics}
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+     
+\end{document}
+
+
+
